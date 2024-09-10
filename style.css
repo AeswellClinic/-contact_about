@@ -1,0 +1,711 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+body{
+  margin: 0;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  max-width: 1200px;
+  height: 653px;
+  margin: 0 auto; 
+}
+.rectangle {
+  position: relative;
+  width: 100%; /* เปลี่ยนเป็น 100% เพื่อให้ภาพพื้นหลังเต็มหน้าจอ */
+  height: 652px;
+  background: url(images/image0.png) no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+.background {
+  position: absolute;
+  height: 654px;
+  top: -1px;
+  right: 1px;
+  left: -1px;
+  background: rgba(93, 93, 94, 0.4);
+  opacity: 1;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+.frame-1 {
+  position: absolute;
+  width: 315px;
+  height: 559px;
+  top: 18px;
+  left: 455px;
+  z-index: 36;
+  overflow: hidden;
+}
+.empty {
+  position: relative;
+  width: 281.535px;
+  height: 562px;
+  margin: 17px 0 0 16.732px;
+  background: url(images/Frame_25.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 37;
+}
+.carousel-group {
+  position: absolute;
+  width: 750px;
+  height: 68.7%;
+  top: 20.09%;
+  left: 52%;
+  transform: translate(-24.53%, 0);
+  z-index: 11;
+  overflow: hidden;
+  border: 2px solid #ffffff; /* เปลี่ยนสีและความหนาของเส้นขอบได้ตามที่ต้องการ */
+  border-radius: 8px; /* เพิ่มการโค้งมนที่ขอบ (ถ้าไม่ต้องการสามารถลบออกได้) */
+}
+
+.bg-border-shadow {
+  position: absolute;
+  height: 448px;
+  width: 355px;
+  top: 0;
+  right: 0;
+  left: 0px;
+  z-index: 12;
+  overflow: hidden;
+  border-radius: 0px;
+  -webkit-mask-image: url(images/image0.png);
+  -webkit-mask-size: cover;
+ 
+}
+.rectangle-2 {
+  position: absolute;
+  width: 1840px;
+  height: 650px;
+  top: -132px;
+  left: -739px;
+  background: url(images/image0.png) no-repeat center;
+  background-size: cover;
+  opacity: 0.18;
+  z-index: 13;
+}
+.heading-san-francisco {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 40.01px;
+  top: 71px;
+  left: 425.03px;
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40.01px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+.inquire-booking-consult {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 310.48px;
+  height: 60.02px;
+  top: 118.995px;
+  left: 425.03px;
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30.01px;
+  text-align: left;
+  z-index: 17;
+}
+.lasalle-avenue-floor-2 {
+  display: flex; /* ใช้ flexbox เพื่อจัดไอคอนและข้อความ */
+  align-items: center; /* จัดให้ข้อความและไอคอนอยู่ตรงกลางในแนวตั้ง */
+  justify-content: flex-end; /* จัดข้อความและไอคอนชิดขวา */
+  position: absolute;
+  height: 20px;
+  top: 179.455px;
+  left: 423.87px;
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: right; /* จัดข้อความให้อยู่ชิดขวา */
+  white-space: nowrap;
+  z-index: 20;
+}
+.material-symbols-outlined{
+  margin-right: 16px; /* เพิ่มระยะห่างระหว่างไอคอนและข้อความ */
+}
+.icon {
+  position: absolute;
+  width: 17.28px;
+  height: 18px;
+  top: 179.455px;
+  left: 424.59px;
+  z-index: 18;
+  overflow: hidden;
+}
+.vector {
+  position: relative;
+  width: 13.313px;
+  height: 15.86px;
+  margin: 0.97px 0 0 -0.01px;
+  background: url(./assets/images/c4640aeb-ce10-4501-8e4a-2c664893ec4f.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 19;
+}
+.aeswell-clinic {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 222.445px;
+  left: 424.87px;
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 22;
+}
+
+.clinic-logo {
+  width: 19px; /* กำหนดขนาดของรูปภาพ */
+  height: auto; /* ให้ปรับความสูงตามสัดส่วน */
+  margin-right: 20px; /* เพิ่มระยะห่างระหว่างรูปภาพกับข้อความ */
+}
+
+.vector-3 {
+  position: absolute;
+  width: 8.268px;
+  height: 15.921px;
+  top: 50%;
+  left: 426.458px;
+  background: url(./assets/images/ca893c84-f4f7-4724-885c-a1e740789cde.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  transform: translate(0, 10.39%);
+  z-index: 24;
+}
+.icon-4 {
+  position: absolute;
+  width: 17.28px;
+  height: 18px;
+  top: 268.425px;
+  left: 424.59px;
+  z-index: 26;
+  overflow: hidden;
+}
+.vector-5 {
+  position: relative;
+  width: 15.849px;
+  height: 15.84px;
+  margin: 0.97px 0 0 0.71px;
+  background: url(./assets/images/7048d863-1725-4970-801f-894ae884d579.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 27;
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20px;
+  top: 269.425px;
+  left: 427.87px;
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 16.734375px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 28;
+}
+.link {
+  position: absolute;
+  width: 28.45%;
+  height: 56.39px;
+  bottom: 70.095px;
+  left: 53.73%;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #dfe1e7;
+  z-index: 29;
+  border-radius: 128px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+.link:hover {
+  background-color: #6c151a; 
+  color: #ffffff; 
+  border-color: #6c151a;
+}
+.background-6 {
+  position: absolute;
+  width: 44.8px;
+  height: 44.8px;
+  top: 50%;
+  left: 159.21px;
+  background: #6c151a;
+  transform: translate(0, -52.22%);
+  z-index: 31;
+  overflow: hidden;
+  border-radius: 22.4px;
+}
+.dfddab-arrow {
+  position: relative;
+  width: 25.59px;
+  height: 25.59px;
+  margin: 9.59px 0 0 9.59px;
+  z-index: 32;
+  overflow: hidden;
+}
+.dfddab-arrow-fill {
+  position: absolute;
+  width: 25.59px;
+  height: 25.59px;
+  top: 0;
+  left: 0;
+  z-index: 33;
+  overflow: hidden;
+}
+.dfddab-arrow-7 {
+  position: absolute;
+  width: 25.59px;
+  height: 25.59px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 34;
+  overflow: hidden;
+}
+.vector-8 {
+  position: relative;
+  width: 22.391px;
+  height: 14.394px;
+  margin: 5.598px 0 0 0.8px;
+  /* background: url(images/Vector.png)
+    no-repeat center; */
+  background-size: 100% 100%;
+  z-index: 35;
+}
+.vector-8 .material-symbols-outlined {
+  font-size: 24px; /* ขนาดของไอคอนลูกศร */
+  color: white; /* สีของไอคอนลูกศร */
+  margin-top: -4px;
+}
+.consultation-doctor-free {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 15.19px;
+  left: 20px;
+  color: #000000;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 15.125px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 30;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  
+}
+.consultation-doctor-free:hover {
+
+  color: #ffffff; /* สีข้อความเมื่อ hover */
+
+}
+
+
+.quality-care-experience {
+  position: absolute;
+  height: 100.02px;
+  top: 240.99px;
+  right: 844.13px;
+  /* left: 126px; */
+  font-family: Prompt, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46.1px;
+  text-align: left;
+  z-index: 8;
+}
+.quality-care-experience-9 {
+  position: relative;
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46.1px;
+  text-align: left;
+}
+.quality {
+  position: relative;
+  color: #6c151a;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46.1px;
+  text-align: left;
+}
+.personalized-treatment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 390px;
+  height: 112px;
+  top: 357.96px;
+  /* left: 126px; */
+  color: #ffffff;
+  font-family: Prompt, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30.01px;
+  text-align: left;
+  z-index: 9;
+}
+
+/* มือถือ */
+
+.Frame481 {
+  width: 430px;
+  height: 1261px;
+  position: relative;
+}
+
+.Group492 {
+  width: 430px;
+  height: 1261px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.Rectangle29 {
+  width: 430px;
+  height: 513px;
+  position: absolute;
+  left: 0px;
+  top: 277px;
+}
+
+.Rectangle39 {
+  width: 430px;
+  height: 1261px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0.86;
+  background: rgba(93, 93, 94, 0.40);
+  backdrop-filter: blur(24px);
+}
+
+.Frame11 {
+  width: 365px;
+  height: 483px;
+  position: absolute;
+  left: 33px;
+  top: 307px;
+}
+
+.Img1 {
+  width: 283px;
+  height: 567px;
+  position: absolute;
+  left: 41px;
+  top: 8px;
+  clip-path: inset(0 0 94px 0); /* ปรับ 50px เพื่อครอบเฉพาะด้านล่าง */
+}
+
+.Group44 {
+  width: 310.92px;
+  height: 306.85px;
+  position: absolute;
+  left: 60px;
+  top: 868px;
+}
+
+.Group17 {
+  width: 310.92px;
+  height: 218.43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.Heading3SanFrancisco {
+  width: 193.64px;
+  height: 40.01px;
+  position: absolute;
+  left: 0.44px;
+  top: 0px;
+  color: white;
+  font-size: 28px;
+  font-family: Prompt, sans-serif;
+  font-weight: 600;
+  line-height: 40.01px;
+  word-wrap: break-word;
+}
+
+.InquiryText {
+  width: 310.48px;
+  height: 60.02px;
+  position: absolute;
+  left: 0.44px;
+  top: 48px;
+  color: white;
+  font-size: 18px;
+  font-family: Prompt, sans-serif;
+  font-weight: 400;
+  line-height: 30.01px;
+  word-wrap: break-word;
+}
+
+.Icon {
+  width: 17.28px;
+  height: 18px;
+  position: absolute;
+  top: 110.46px;
+}
+
+.Icon-1 {
+  width: 17.28px;
+  height: 18px;
+  position: absolute;
+  top: 45.46px;
+}
+
+.Vector {
+  width: auto; /* หรือกำหนดขนาดที่ต้องการ */
+  height: auto; /* หรือกำหนดขนาดที่ต้องการ */
+  position: absolute;
+  top: 1.17px;
+}
+.material-symbols-outlined{
+  font-size: 16px; /* ขนาดของไอคอน */
+  color: white; /* สีของไอคอน */
+} 
+.Location {
+  width: 203.29px;
+  height: 20px;
+  position: absolute;
+  left: 23.28px;
+  top: 108.46px;
+  color: white;
+  font-size: 18px;
+  font-family: Prompt, sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.Vector-2 {
+  width: auto; /* หรือกำหนดขนาดที่ต้องการ */
+  height: auto; /* หรือกำหนดขนาดที่ต้องการ */
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.Link {
+  width: 278.25px;
+  height: 20px;
+  position: absolute;
+  top: 153.45px;
+}
+
+.AeswellClinic {
+  width: 255.17px;
+  height: 20px;
+  position: absolute;
+  left: 23.28px;
+  top: 0px;
+  color: white;
+  font-size: 18px;
+  font-family: Prompt, var(--default-font-family);
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.Svg {
+  width: 12px;
+  height: 17px;
+  position: absolute;
+  top: 1.01px;
+}
+.Vector-1 {
+  width: 16px; /* กำหนดขนาดตามที่ต้องการ */
+  height: 16px;
+  background-image: url('images/SVG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1.17px;
+}
+
+
+.PhoneNumber {
+  width: 136.34px;
+  height: 20px;
+  position: absolute;
+  left: 23.28px;
+  top: 45px;
+  color: white;
+  font-size: 16.73px;
+  font-family: Prompt, var(--default-font-family);
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.ConsultationLink {
+  width: 225px;
+  height: 56.39px;
+  position: absolute;
+  left: 43px;
+  top: 250.46px;
+  background: white;
+  border-radius: 128px;
+  border: 1px solid #DFE1E7;
+}
+
+.ConsultationText {
+  width: 103.40px;
+  height: 24px;
+  position: absolute;
+  left: 21px;
+  top: 16.19px;
+  color: #000000;
+  font-size: 15.12px;
+  font-family: Prompt, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.Background {
+  width: 44.80px;
+  height: 44.80px;
+  position: absolute;
+  left: 172.21px;
+  top: 5.80px;
+  background: #6C151A;
+  border-radius: 22.40px;
+  overflow: hidden;
+}
+
+.Df791dd1051781a430b996ArrowSvg {
+  width: 25.59px;
+  height: 25.59px;
+  position: absolute;
+  top: 9.59px;
+}
+
+.Df791dd1051781a430b996ArrowSvgFill {
+  width: 25.59px;
+  height: 25.59px;
+  position: absolute;
+}
+
+.ExperienceText {
+  position: absolute;
+  left: 80px;
+  top: 37.99px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Prompt, sans-serif;
+  font-weight: 600;
+  line-height: 46.10px;
+  word-wrap: break-word;
+}
+
+.Highlight {
+  color: #6C151A;
+}
+
+.ClinicDescription {
+  position: absolute;
+  left: 36px;
+  top: 158.96px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-family: Prompt, sans-serif;
+  font-weight: 300;
+  line-height: 30.01px;
+  word-wrap: break-word;
+}
+
+.Rectangle40 {
+  width: 365px;
+  height: 381px;
+  position: absolute;
+  left: 33px;
+  top: 834px;
+  border-radius: 20px;
+  border: 1px solid #F1F1F1;
+}
+
+
+
+@media (min-width: 769px) {
+  .rectangle {
+    display: block; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .rectangle {
+    display: none; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Frame481 {
+    display: block; 
+  }
+}
+
+
+@media (min-width: 769px) {
+  .Frame481 {
+    display: none; 
+  }
+}
