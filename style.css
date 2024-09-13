@@ -396,7 +396,15 @@ button {
     position: relative;
     height: 100%;
   }
+  .quality-care-experience-9{
+    font-size: 29px;
+  }
 
+  .empty {
+    
+    width: 275.535px;
+    height: 477px;
+  }
 
   .quality-care-experience, .personalized-treatment {
     order: 1;
@@ -412,7 +420,7 @@ button {
   }
   .frame-1 {
     left: 14px;
-    margin-top: 50px;
+    margin-top: 115px;
 }
   .carousel-group {
     margin-top: 20px;
@@ -455,6 +463,7 @@ button {
   .personalized-treatment{
     top: 0;
     margin-top: 50px;
+    font-size: 16px;
   }
 }
 
@@ -483,7 +492,7 @@ button {
     position: relative;
     order: 1;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     width: 100%;
     left: 0;
     top: 0;
@@ -501,7 +510,9 @@ button {
     top: 0;
     left: 0;
   }
-
+  .heading-san-francisco{
+    font-size: 25px;
+  }
   .empty {
     display: flex;
     justify-content: center;
@@ -525,7 +536,7 @@ button {
   .carousel-group {
     position: relative;
     order: 3;
-    width: 100%;
+    width: 85%;
     height: 375px;
     margin-top: 20px;
     display: flex;
@@ -545,7 +556,8 @@ button {
   }
   .inquire-booking-consult{
     margin-left: 30px;
-    top: 80px;
+    top: 76px;
+    font-size: 16px;
   }
   .icon{
     left: 0;
@@ -563,10 +575,14 @@ button {
   .rectangle-2{
     display: none;
   }
+  .aeswell-clinic{
+    font-size: 16px;
+  }
 
   .lasalle-avenue-floor-2{
     top: 147.455px;
     margin-left: 30px;
+    font-size: 16px;
   }
 
   .aeswell-clinic{
@@ -592,7 +608,7 @@ button {
     box-sizing: border-box;
     position: relative;
     left: 0;
-    top: 130px;
+    top: 145px;
   }
 
   body, html {
@@ -625,5 +641,15 @@ button {
     color: white;
     margin-top: -8px;
     margin-left: -3px;
+  }
+  .quality-care-experience-9{
+    font-size: 28px;
+
+  }
+  .quality-care-experience{
+    width: 80%;
+  }
+  .personalized-treatment{
+    font-size: 16px;
   }
 }
