@@ -60,7 +60,7 @@ button {
   position: relative;
   width: 255.535px;
   height: 438px;
-  margin: 38px 0 0 16.732px;
+  margin: 17px 0 0 16.732px;
   background: url(images/Frame_25.png) no-repeat center;
   background-size: cover;
   z-index: 37;
@@ -261,8 +261,8 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 .link:hover {
-  background-color: #6c151a; 
-  color: #ffffff; 
+  background-color: #ffffff; 
+  color: #6c151a; 
   border-color: #6c151a;
 }
 .background-6 {
